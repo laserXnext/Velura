@@ -1,0 +1,66 @@
+.login {
+    background-color: var(--background-col);
+}
+
+.login-page{
+    background-image: var(--background-img-login);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.textcontainer-login {
+    max-width: 900px;
+    max-height: fit-content;
+    padding: 2rem;
+    color: var(--theme-color-4);
+    position: relative;
+    right: 300px;
+    top:150px;
+}
+
+.title-login {
+    font-size: 2.5rem;
+    font-family: "itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sub-title-login {
+    font-family: "itim", serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+.description-login {
+    font-family: "itim", serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+svg 
+{
+    width: 40px;
+    height: auto;
+}
+.forgot-password {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: var(--primary-color, #333);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: var(--accent-color, #666);
+}

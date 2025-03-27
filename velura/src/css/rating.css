@@ -1,0 +1,45 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rating-container i {
+    cursor: default;
+    transition: transform 0.1s, color 0.2s;
+}
+
+.rating-container i.interactive {
+    cursor: pointer;
+}
+
+.rating-container i.interactive:hover {
+    transform: scale(1.2);
+}
+
+.rating-container i.filled {
+    color: #ffb700;
+}
+
+.rating-container i.empty {
+    color: #ccc;
+}
+
+.rating-text {
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Sizes */
+.size-small i {
+    font-size: 14px;
+}
+
+.size-medium i {
+    font-size: 18px;
+}
+
+.size-large i {
+    font-size: 24px;
+}

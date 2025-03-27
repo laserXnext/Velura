@@ -1,0 +1,122 @@
+.hero {
+    padding: 6rem 5%;
+    text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(109, 35, 35, 0.85),
+            rgba(163, 29, 29, 0.2)),
+        url('../assets/1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 620px;
+    left: 2.5%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-family: serif;
+    font-size: 8rem;
+    color: var(--theme-color-3);
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 2.5rem;
+    font-family: "Comfortaa", cursive;
+    color: var(--theme-color-4);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--theme-color-2);
+    color: var(--theme-color-1);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Itim", sans-serif;
+}
+
+.cta-button:hover {
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-2);
+}
+
+
+.categories {
+    padding: 2rem 5%;
+    background-color: var(--theme-color-1);
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--background-col);
+    font-family: "Comfortaa", cursive;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: var(--theme-color-2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card h3 {
+    font-size: 2rem;
+    color: var(--theme-color-4);
+    margin-bottom: 1rem;
+    font-family: "Comfortaa", cursive;
+}
+
+.category-items {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.category-button {
+    background-color: var(--theme-color-4);
+    color: var(--theme-color-2);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Itim", sans-serif;
+    margin-top: 1.5rem;
+}
+

@@ -1,0 +1,364 @@
+/* Admin Chat Styles */
+.admin-chat-page {
+    display: flex;
+    height: calc(100vh - 160px);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-chat-sidebar {
+    width: 300px;
+    background-color: #fff;
+    border-right: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-chat-sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.admin-chat-sidebar-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.admin-chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.chat-user-list {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.chat-user-item {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-items: center;
+}
+
+.chat-user-item:hover {
+    background-color: #f5f5f5;
+}
+
+.chat-user-item.selected {
+    background-color: #f0f7ff;
+}
+
+.chat-user-item.unread {
+    background-color: #f0f7ff;
+}
+
+.chat-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--theme-color-2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.chat-user-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.chat-user-name {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-user-badge {
+    background-color: var(--theme-color-2);
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.chat-user-last-message {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-user-time {
+    font-size: 12px;
+    color: #999;
+    margin-left: 8px;
+}
+
+.no-chats-message {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.no-chat-selected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+}
+
+.no-chat-selected i {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #ccc;
+}
+
+.no-chat-selected h3 {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.no-chat-selected p {
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+.admin-chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.admin-chat-header {
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+}
+
+.admin-chat-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-chat-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--theme-color-2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.admin-chat-user-name {
+    font-weight: 500;
+}
+
+.admin-chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-chat-message {
+    max-width: 70%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.admin-chat-message.user {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+
+.admin-chat-message.admin {
+    align-self: flex-end;
+    background-color: #6772e5;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.message-content {
+    word-wrap: break-word;
+}
+
+.message-time {
+    font-size: 11px;
+    margin-top: 4px;
+    opacity: 0.7;
+    text-align: right;
+}
+
+.admin-chat-reply-form {
+    padding: 16px;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+}
+
+.admin-chat-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    font-size: 14px;
+}
+
+.admin-chat-input:focus {
+    outline: none;
+    border-color: #6772e5;
+}
+
+.admin-chat-send-button {
+    margin-left: 12px;
+    background-color: #6772e5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.admin-chat-send-button:hover {
+    background-color: #5561c7;
+}
+
+/* Admin Chat Popup Styles */
+.admin-chat-popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.admin-chat-popup-header {
+    padding: 16px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-chat-popup-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.admin-chat-popup-header .back-button,
+.admin-chat-popup-header .close-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.admin-chat-popup-content {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.admin-chat-popup-footer {
+    padding: 12px;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.view-all-button {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.view-all-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Add this to your existing AdminMain.css file */
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #f03e3e;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-button {
+    position: relative;
+}
+
+.chat-badge {
+    background-color: #f03e3e;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}

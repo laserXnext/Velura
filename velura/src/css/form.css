@@ -1,0 +1,254 @@
+.resumeform-page {
+  background-image: var(--background-img-signup);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.resumeform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.3); 
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.resumeform {
+  background-color: var(--theme-color-4);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.form-logo {
+  font-size: 1.5rem;
+  color: var(--background-col);
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.resumeform input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 5px 0;
+  border: 1px solid var(--background-col);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 5px 0;
+  border: 1px solid var(--background-col);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  height: 40px;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea.expanded {
+  height: 120px;
+}
+
+
+.resumeform input:focus {
+  border-color: var(--theme-color-8);
+}
+.form-full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.form-address {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.form-full-name input,
+.form-address input {
+  width: 100%;
+}
+
+
+.btn {
+  background-color: var(--background-col);
+  color: var(--theme-color-4);
+  font-size: 1rem;
+  font-family: "Bangers", serif;
+  letter-spacing: 5px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--theme-color-8);
+}
+
+.upload-btn {
+  background-color: transparent;
+  color: var(--theme-color-8);
+  font-size: 1.25rem;
+  font-family: "Mogra", serif;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--theme-color-8);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.upload-btn:hover {
+  background-color: var(--theme-color-8);
+  color: var(--theme-color-4);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 1rem;
+  color: var(--theme-color-9);
+  position: relative;
+}
+
+.text::before,
+.text::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d1d5db;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .form-full-name,
+  .form-address {
+    flex-direction: column;
+  }
+
+  .form-full-name input,
+  .form-address input {
+    width: 100%;
+  }
+}
+
+.expandable-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 5px 0;
+  border: 1px solid var(--background-col);
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 50px;
+  cursor: text;
+  background-color: var(--theme-color-4);
+  color: #4b5563;
+  text-align: left;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: var(--theme-color-4);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.modal-content i {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.modal-content textarea {
+  width: 100%;
+  height: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Bangers", serif;
+  letter-spacing: 5px;
+}
+
+.modal-buttons button:first-child {
+  background-color: #e5e7eb;
+  color: var(--theme-color-5);
+}
+
+.modal-buttons button:last-child {
+  background-color: var(--theme-color-8);
+  color: var(--theme-color-4);
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .modal-content textarea {
+    height: 200px;
+  }
+}

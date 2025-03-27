@@ -1,0 +1,278 @@
+.review-form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.review-form h3 {
+    margin: 0 0 24px 0;
+    color: #272a36;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #eaedf0;
+    padding-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #4a4d58;
+    font-size: 15px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dfe2e8;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #272a36;
+    transition: all 0.2s ease;
+    background-color: #f9fafc;
+    outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    border-color: #a478e8;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(164, 120, 232, 0.12);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group textarea::placeholder {
+    color: #b4b7c1;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Rating component styling enhancement */
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.rating-container.large .star {
+    font-size: 32px;
+    margin-right: 8px;
+}
+
+.rating-container .star {
+    cursor: pointer;
+    color: #d3d5da;
+    transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.rating-container .star:hover {
+    transform: scale(1.1);
+}
+
+.rating-container .star.filled {
+    color: #ffc107;
+}
+
+.rating-helper {
+    font-size: 13px;
+    color: #848896;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Error message styling */
+.review-error {
+    padding: 12px 16px;
+    background-color: #fff4f5;
+    border-left: 3px solid #ff5a65;
+    color: #e03e48;
+    margin-bottom: 22px;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+}
+
+/* Form action buttons */
+.review-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #eaedf0;
+}
+
+.btn-cancel,
+.btn-submit {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-cancel {
+    background-color: #f2f3f5;
+    color: #595c68;
+}
+
+.btn-cancel:hover {
+    background-color: #e8e9ec;
+}
+
+.btn-submit {
+    background-color: #a478e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-submit:hover {
+    background-color: #9163d8;
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Character counter */
+.char-counter {
+    font-size: 12px;
+    color: #848896;
+    text-align: right;
+    margin-top: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .review-form {
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        padding: 12px 14px;
+    }
+
+    .rating-container.large .star {
+        font-size: 28px;
+    }
+
+    .review-form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-cancel,
+    .btn-submit {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* Focus outlines for accessibility */
+.form-group input[type="text"]:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid #a478e8;
+    outline-offset: 1px;
+}
+
+.btn-cancel:focus-visible,
+.btn-submit:focus-visible {
+    outline: 2px solid #a478e8;
+    outline-offset: 2px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .review-form {
+        background-color: #1c1e25;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .review-form h3 {
+        color: #f0f2f5;
+        border-bottom-color: #2e303a;
+    }
+
+    .form-group label {
+        color: #c5c8d0;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        background-color: #2a2c34;
+        border-color: #3a3c46;
+        color: #e0e2e6;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group textarea:focus {
+        background-color: #2e303a;
+        border-color: #a478e8;
+    }
+
+    .form-group input[type="text"]::placeholder,
+    .form-group textarea::placeholder {
+        color: #6f727e;
+    }
+
+    .rating-container .star {
+        color: #4a4d58;
+    }
+
+    .rating-container .star.filled {
+        color: #ffc107;
+    }
+
+    .btn-cancel {
+        background-color: #2a2c34;
+        color: #c5c8d0;
+    }
+
+    .btn-cancel:hover {
+        background-color: #33353f;
+    }
+
+    .review-form-actions {
+        border-top-color: #2e303a;
+    }
+
+    .review-error {
+        background-color: rgba(255, 90, 101, 0.15);
+    }
+}

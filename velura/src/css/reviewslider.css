@@ -1,0 +1,261 @@
+.review-slider-container {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    position: relative;
+    background-color: var(--theme-color-3);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(109, 35, 35, 0.15);
+    overflow: hidden;
+}
+
+.review-slider-title {
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.review-slider-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--theme-color-2);
+    margin: 10px auto;
+}
+
+.review-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.review-slide-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.review-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-content {
+    width: 80%;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: var(--theme-color-4);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.review-content:before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 6rem;
+    color: var(--theme-color-1);
+    font-family: 'Georgia', serif;
+    opacity: 0.3;
+}
+
+.review-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--theme-color-2);
+    margin: -50px auto 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-rating {
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 1.5rem;
+    margin: 0 2px;
+}
+
+.filled {
+    color: goldenrod;
+}
+
+.empty {
+    color: #ccc;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--theme-color-5);
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.review-author {
+    margin-top: 15px;
+}
+
+.review-author h3 {
+    color: var(--bg-color);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.review-location {
+    color: var(--theme-color-9);
+    font-size: 0.9rem;
+}
+
+.review-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--theme-color-2);
+    color: var(--theme-color-4);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.review-nav:hover {
+    opacity: 1;
+    background-color: var(--bg-color);
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.nav-arrow {
+    display: inline-block;
+    line-height: 1;
+}
+
+.review-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.review-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--theme-color-1);
+    margin: 0 6px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.review-dot.active {
+    background-color: var(--theme-color-2);
+    width: 16px;
+    height: 16px;
+}
+
+/* Animation for active slide */
+.review-slide.active {
+    z-index: 5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .review-slider-container {
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .review-slider {
+        height: 450px;
+    }
+
+    .review-content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .review-text {
+        font-size: 1rem;
+    }
+
+    .review-slider-title {
+        font-size: 2rem;
+    }
+
+    .review-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-slider-container {
+        padding: 1rem;
+    }
+
+    .review-slider {
+        height: 500px;
+    }
+
+    .review-content {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .review-image-container {
+        width: 80px;
+        height: 80px;
+        margin: -40px auto 15px;
+    }
+
+    .review-slider-title {
+        font-size: 1.8rem;
+    }
+
+    .review-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}

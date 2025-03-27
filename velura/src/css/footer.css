@@ -1,0 +1,119 @@
+.footer {
+    background-color: var(--theme-color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px 50px 0 0;
+    height:400px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.footer-service, .footer-links, .footer-socila-media {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-family: "Bangers", serif;
+    letter-spacing: 5px;
+    color: var(--theme-color-2);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--background-col);
+}
+
+.footer-section ul li a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--background-col);
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--theme-color-2);
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-links li {
+    list-style: none;
+    color: var(--background-col);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-media-links li i{
+    font-size: 50px;
+}
+.social-media-links li:hover {
+    color: var(--theme-color-2);
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--background-col);
+    margin-top: 10px;
+}
+.footer-copright
+{
+    margin-top: 20px;
+    width: 100%;
+    border-top: 2px solid var(--theme-color-2);
+}
+
+.facebook:hover 
+{
+    color: #3b5998;
+}
+.whatsapp:hover 
+{
+    color: #25D366;
+}
+.linkedin:hover 
+{
+    color: #0e76a8;
+}
+
+@media (min-width: 768px) {
+    .footer-section {
+        flex-direction: row;
+    }
+
+    .footer {
+        padding: 40px 60px;
+    }
+}

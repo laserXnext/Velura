@@ -1,0 +1,252 @@
+.product-slider {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.product-slider h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--background-col);
+    font-family: "Comfortaa", cursive;
+}
+
+.slideshow-container {
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+}
+
+.slide a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.slide-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider-text {
+    color: var(--background-col);
+    background: var(--theme-color-3);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-text h3 {
+    font-family: "Comfortaa", cursive;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.slider-text p {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    margin: 5px 0;
+    max-width: 80%;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.original-price {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.price {
+    font-family: "Comfortaa", cursive;
+    font-size: 25px;
+    color: var(--background-col);
+    font-weight: bold;
+}
+
+.discount-badge {
+    background-color: var(--theme-color-4);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.slide-buttons i {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0;
+    border: none;
+    background-color: var(--theme-color-4);
+    color: var(--background-col);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.slide-buttons i:hover {
+    background-color: var(--background-col);
+    color: var(--theme-color-4);
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 165px;
+    width: 100%;
+    z-index: 2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background: var(--theme-color-9);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.active-dot {
+    background: var(--background-col);
+    transform: scale(1.2);
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid var(--theme-color-4);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-left: 4px solid red;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: red;
+    border-radius: 4px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slide-image {
+        height: 400px;
+    }
+    
+    .slider-text {
+        height: 130px;
+    }
+    
+    .slider-text h3 {
+        font-size: 20px;
+    }
+    
+    .slider-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-image {
+        height: 300px;
+    }
+    
+    .slider-text {
+        height: 120px;
+    }
+    
+    .slider-text h3 {
+        font-size: 18px;
+    }
+    
+    .slider-text p {
+        font-size: 14px;
+        max-width: 95%;
+    }
+    
+    .slide-buttons i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

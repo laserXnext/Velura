@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ae85f86c-2304-47c3-aac7-12fe06155820",
+    "productId": 11,
+    "rating": 5,
+    "title": "",
+    "comment": "Its cool",
+    "name": "Anonymous",
+    "date": "2025-03-20T19:23:13.685Z"
+  },
+  {
+    "id": "c70b2d39-b0fa-4721-8ce7-90e3dc8cd396",
+    "productId": 13,
+    "rating": 5,
+    "title": "",
+    "comment": "test",
+    "name": "Anonymous",
+    "date": "2025-03-20T19:23:59.206Z"
+  },
+  {
+    "id": "8e62e91b-08bf-4785-9500-1195a9719147",
+    "productId": 13,
+    "rating": 3,
+    "title": "",
+    "comment": "check",
+    "name": "Anonymous",
+    "date": "2025-03-20T19:24:09.183Z"
+  },
+  {
+    "id": "f1fb6a1a-ef18-4a9c-b69e-8d2e921ee07f",
+    "productId": 13,
+    "rating": 1,
+    "title": "",
+    "comment": "t",
+    "name": "Anonymous",
+    "date": "2025-03-20T19:24:18.547Z"
+  }
+]

@@ -1,0 +1,207 @@
+.hero-about-section {
+    background-color: var(--background-col);
+    color: var(--theme-color-1);
+    background-image: linear-gradient(to right,
+            rgba(109, 35, 35, 0.9),
+            rgba(163, 29, 29, 0.5),
+            rgba(212, 175, 55, 0.3)),
+        url('../assets/4.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    height: 620px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.hero-about-content {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-about-content h1 {
+    font-size: 10rem;
+    color: var(--theme-color-4);
+    font-family: "Itim", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.hero-about-content p {
+    font-size: 1.5rem;
+    color: var(--theme-color-4);
+    margin-bottom: 2rem;
+}
+
+.story-section {
+    background-color: var(--theme-color-3);
+    background-image: linear-gradient(to right,
+            rgba(255, 153, 102, 0.9),
+            rgba(204, 51, 51, 0.9),
+            rgba(153, 102, 204, 0.8),
+            rgba(102, 204, 255, 0.4),
+            rgba(255, 153, 204, 0.3)),
+        url('../assets/5.jpeg');
+    background-position: center;
+    background-repeat: repeat;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-text h2 {
+    color: var(--theme-color-4);
+    font-family: "Itim", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-text p {
+    color: var(--theme-color-3);
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.story-image {
+    background: url('../assets/5.jpeg') center/cover;
+    min-height: 300px;
+    border-radius: 20px;
+}
+
+.mission-section {
+    padding: 4rem 2rem;
+    background-color: var(--theme-color-4);
+    text-align: center;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,
+                rgba(109, 35, 35, 0.9),
+                rgba(163, 29, 29, 0.5),
+                rgba(212, 175, 55, 0.3)),
+            url('../assets/7.webp');
+}
+
+.mission-section h2 {
+    color: var(--theme-color-4);
+    font-family: "Itim", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-card {
+    background: var(--theme-color-4);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-card h3 {
+    color: var(--background-col);
+    font-family: "Itim", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission-card p {
+    color: var(--theme-color-2);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-banner {
+    background-color: var(--theme-color-2);
+    color: var(--theme-color-4);
+    background-image: linear-gradient(to right,
+                rgba(109, 35, 35, 0.85),
+                rgba(163, 29, 29, 0.2)),
+            url('../assets/8.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.contact-banner h2 {
+    font-size: 2.5rem;
+    font-family: "Itim", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.contact-button {
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-2);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--theme-color-3);
+}
+
+.top-chat-wrapper {
+    padding: 0;
+    background-color: var(--theme-color-1);
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+
+    .story-grid,
+    .mission-cards,
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-grid {
+        gap: 2rem;
+    }
+
+    .story-image {
+        min-height: 200px;
+    }
+}

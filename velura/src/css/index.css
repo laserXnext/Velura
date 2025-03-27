@@ -1,0 +1,63 @@
+:root {
+    --background-col: #6D2323;
+    --theme-color-1: #EEDFBF;
+    --theme-color-2: #A31D1D;
+    --theme-color-3: #FEF9E1;
+    --theme-color-4: #ffffff;
+    --theme-color-5: #1b1b1b;
+    --theme-color-7: #074799;
+    --theme-color-9: #4b5563;
+    --background-img-signup: url(../assets/back_1.jpg);
+    --background-img-login: url(../assets/back_2.jpg);
+    --background-banner-1: url(../assets/back_3.png);
+    --logo: url(../assets/logo.png);
+
+    /* Extended palette based on provided colors */
+    --primary-color: var(--theme-color-2);
+    /* A31D1D - Deep red */
+    --secondary-color: var(--background-col);
+    /* 6D2323 - Darker red */
+    --accent-color: var(--theme-color-7);
+    /* 074799 - Deep blue */
+    --light-accent: var(--theme-color-1);
+    /* EEDFBF - Soft cream */
+    --text-color: var(--theme-color-5);
+    /* 1b1b1b - Near black */
+    --light-text: var(--theme-color-9);
+    /* 4b5563 - Medium gray */
+    --bg-color: var(--background-col);
+    /* ffffff - White */
+    --light-bg: var(--theme-color-3);
+    /* FEF9E1 - Light cream */
+    --border-color: #d1c3a7;
+    /* Derived from theme-color-1 */
+
+    /* Status colors */
+    --success-color: #2d8a64;
+    /* Green that complements the palette */
+    --warning-color: #ba8a2d;
+    /* Amber that complements the palette */
+    --error-color: var(--theme-color-2);
+    /* A31D1D - Deep red (same as primary) */
+    --info-color: var(--theme-color-7);
+    --shadow: 0 4px 12px rgba(109, 35, 35, 0.15);
+    --shadow-light: 0 2px 8px rgba(109, 35, 35, 0.08);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+*
+{
+    margin:0%;
+    padding:0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--theme-color-1);
+}
