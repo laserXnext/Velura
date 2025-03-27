@@ -3,7 +3,7 @@ import Product from './components/Product';
 import Searchbar from './components/searchbar';
 import Navbar from './components/Navbar';
 import Filter from './components/filter';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import ChatSystem from './components/ChatBot';
 
 const ProductPage = () => {
