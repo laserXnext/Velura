@@ -6,7 +6,7 @@ import ProductSlider from "./components/productSlider";
 import ReviewsSlider from "./components/ReviewSlider";
 import ChatSystem from './components/ChatBot'; 
 
-import "./css/Home.css";
+import "./css/home.css";
 
 
 const Home = () => {
