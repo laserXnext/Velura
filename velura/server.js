@@ -24,7 +24,7 @@ const PORT = 8082;
 // Enable CORS for client requests
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://velura.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
