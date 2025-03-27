@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "../hooks/cartContext";
 import MiniProfile from "./miniprofile";
 import useAuth from "../hooks/useAuth";
-import "../css/navbar.css"; 
+import "../css/Navbar.css"; 
 
 const Navbar = () => {
     const user = useAuth();
