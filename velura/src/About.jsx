@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Collection from './components/collections';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import ChatSystem from './components/ChatBot'; 
 
 import "./css/about.css";
